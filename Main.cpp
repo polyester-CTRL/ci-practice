@@ -7,10 +7,10 @@ void Main()
 	Scene::SetBackground(ColorF{ 0.8, 0.9, 1.0 });
 
 	// 通常のフォントを作成 | Create a new font
-	const Font font{ 60 };
+    const Font font{ 60 };
 
 	// 絵文字用フォントを作成 | Create a new emoji font
-	const Font emojiFont{ 60, Typeface::ColorEmoji };
+	const Font emojiFont{ 60, Typeface::ColorEmoji }; 
 
 	// `font` が絵文字用フォントも使えるようにする | Set emojiFont as a fallback
 	font.addFallback(emojiFont);
